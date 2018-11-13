@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+header img {
+    width: 40%;
+}
+
+header,
+nav {
+    background-color: #2a3a38;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 70px;
+    grid-gap: 5px;
+    position: fixed;
+    bottom: 0;
+}
+
+button img {
+    width: 100%;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
