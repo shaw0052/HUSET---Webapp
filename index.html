@@ -11,50 +11,53 @@
 
 
 <body>
+    <div class="generel_grid">
+        <header>
 
+            <!------------ billede i toppen ----------------->
+            <img src="assets/huset_logo_white.png" alt="HUSET logo">
 
+        </header>
 
-    <header>
-
-
-        <!------------ billede i toppen ----------------->
-        <img src="assets/huset_logo_white.png" alt="HUSET logo">
-
-    </header>
-
-    <!------------ menu knapper ----------------->
-    <nav>
-        <button class="knap" onclick="changeHomeImg()">
-            <img class="homeImg" src="assets/h_pink.png" alt="H - Fra HUSET logo">
-            <img class="homeImg hide" src="assets/h_pink.png" alt="H - Fra HUSET logo">
-        </button>
-        <button id="film" class="knap">
-            <img class="filmImgWhite" src="assets/film_hvid.png" alt="film ikon">
-            <img class="filmImgPink hide" src="assets/film_pink.png" alt="film ikon">
-        </button>
-        <button id="musik" class="knap">
-            <img class="musikImg" src="assets/musik_hvid.png" alt="musik ikon">
-            <img class="musikImg hide" src="assets/musik_pink.png" alt="musik ikon">
-        </button>
-        <button id="teater" class="knap">
-            <img class="teaterImg" src="assets/teater_hvid.png" alt="teater ikon">
-            <img class="teaterImg hide" src="assets/teater_pink.png" alt="teater ikon">
-        </button>
-        <button id="kontakt" class="knap">
-            <img class="kontaktImg" src="assets/kontakt_hvid.png" alt="kontakt ikon">
-            <img class="kontaktImg hide" src="assets/kontakt_pink.png" alt="kontakt ikon">
-        </button>
-
-
-    </nav>
-    <main>
-
-        <section>
-
-        </section>
-
-    </main>
-    <script src="script.js"></script>
+        <!------------ menu knapper ----------------->
+        <nav>
+            <button id="alle" class="event-item" data-kategori="alle">
+                <img class="homeImg" src="assets/h_pink.png" alt="H - Fra HUSET logo">
+                <img class="homeImg hide" src="assets/h_pink.png" alt="H - Fra HUSET logo">
+            </button>
+            <button id="film" class="event-item" data-kategori="film">
+                <img class="filmImgWhite" src="assets/film_hvid.png" alt="film ikon">
+                <img class="filmImgPink hide" src="assets/film_pink.png" alt="film ikon">
+            </button>
+            <button id="musik" class="event-item" data-kategori="musik">
+                <img class="musikImg" src="assets/musik_hvid.png" alt="musik ikon">
+                <img class="musikImg hide" src="assets/musik_pink.png" alt="musik ikon">
+            </button>
+            <button id="teater" class="event-item" data-kategori="teater">
+                <img class="teaterImg" src="assets/teater_hvid.png" alt="teater ikon">
+                <img class="teaterImg hide" src="assets/teater_pink.png" alt="teater ikon">
+            </button>
+            <button id="kontakt">
+                <img class="kontaktImg" src="assets/kontakt_hvid.png" alt="kontakt ikon">
+            </button>
+        </nav>
+        <main>
+            <section class="event_grid">
+                <div class="data-content"></div>
+                <template id="data-template">
+                    <div class="event_content">
+                        <img class="topImage" src="" alt="">
+                        <div class="box">
+                            <h2></h2>
+                            <p class="data-dato"></p>
+                            <p class="data-tidspunkt"></p>
+                        </div>
+                    </div>
+                </template>
+            </section>
+        </main>
+    </div>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

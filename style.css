@@ -1,9 +1,33 @@
 body {
     margin: 0;
+    /*    background-color: #2a3a38;*/
+}
+
+.generel_grid {
+    display: grid;
+    grid-template-rows: 61.28px auto 70px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    grid-row: 1;
 }
 
 header img {
     width: 40%;
+}
+
+nav {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 70px;
+    grid-gap: 5px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
 }
 
 header,
@@ -12,17 +36,59 @@ nav {
     text-align: center;
 }
 
-header {
-    position: fixed;
+main {
+    grid-row: 2;
 }
 
-nav {
+p,
+h2 {
+    color: white;
+}
+
+.event_grid {
+    width: 100vw;
+}
+
+.event_content {
+    height: 220.64px;
+    margin-bottom: 5px;
+}
+
+.event_content .box {
+    position: relative;
+    bottom: 79px;
+    height: 75px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 70px;
-    grid-gap: 5px;
-    position: fixed;
-    bottom: 0;
+    grid-column-gap: 8px;
+    grid-template-columns: 2% repeat(4, auto) 2%;
+    grid-template-rows: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.event_content h2 {
+    grid-column: 2 / span 4;
+    grid-row: 1;
+}
+
+.event_content .data-dato {
+    justify-self: end;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.event_content .data-tidspunkt {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.event_content img {
+    width: 100%;
+    position: relative;
+}
+
+.data-tidspunkt {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 button img {
