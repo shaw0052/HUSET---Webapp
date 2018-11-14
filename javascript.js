@@ -16,6 +16,10 @@ let dest = document.querySelector(".data-content");
 
 eventFilter = "alle";
 
+document.querySelector("#kontakt").addEventListener("click", function () {
+    location.href = "kontakt.html";
+})
+
 document.querySelectorAll(".event-item").forEach(knap => {
     knap.addEventListener("click", filtrering)
 });
