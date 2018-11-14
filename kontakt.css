@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+}
+
+p {
+    color: black;
+}
+
+p a{
+     font-size: 1em;
+}
+
+a{
+color: black;
+      font-size: 1.8em;
+    margin-right: 2vw;
+}
+
+section{
+    margin: 4vw;
+}
