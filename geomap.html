@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSET webapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="geomap.css">
+
+    <!-- link til facebook og insta -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" alt="link til facebook, instagram og twitter">
+
+
+
+</head>
+
+<body>
+    <div class="generel_grid">
+        <header>
+
+            <!------------ billede i toppen ----------------->
+            <img src="assets/huset_logo_white.png" alt="HUSET logo">
+
+        </header>
+
+        <!------------ menu knapper ----------------->
+        <nav>
+            <button id="backToHome">
+                <img class="homeImg" src="assets/tilbage_knap.png" alt="H - Fra HUSET logo">
+            </button>
+            <button id="kontakt">
+                <img class="kontaktImg" src="assets/kontakt_hvid.png" alt="kontakt ikon">
+            </button>
+        </nav>
+        <main>
+            <div style="width: 100%"><iframe width="100%" height="550" src="https://maps.google.com/maps?width=100%&amp;height=100&amp;hl=en&amp;q=R%C3%A5dhusstr%C3%A6de%2013+(Huset%20KBH)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google map generator</a></iframe></div><br />
+        </main>
+    </div>
+    <script src="geomap.js"></script>
+</body>
+
+</html>
