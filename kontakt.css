@@ -1,6 +1,5 @@
 img {
     width: 100%;
-    margin-top: 5vw;
 }
 
 p {
@@ -20,3 +19,8 @@ color: black;
 section{
     margin: 4vw;
 }
+
+#geoMap {
+    grid-column: 5;
+}
+
