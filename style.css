@@ -45,6 +45,11 @@ button img {
     position: relative;
 }
 
+button {
+    border-color: transparent;
+    background: 0;
+}
+
 .hide {
     display: none;
 }
