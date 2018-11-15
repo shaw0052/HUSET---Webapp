@@ -74,7 +74,7 @@ function showPosts() {
             let klon = myTemplate.cloneNode(true).content;
 
             klon.querySelector("img").src = post.acf.billede;
-            klon.querySelector("img").addEventListener("click", () => {
+            klon.querySelector(".event_content").addEventListener("click", () => {
                 window.location.href = "singelevent.html?id=" + i;
             });
             klon.querySelector("h2").innerHTML = post.acf.titel;

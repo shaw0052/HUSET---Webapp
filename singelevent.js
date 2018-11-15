@@ -57,6 +57,7 @@ function showPosts() {
             dest.querySelector(".data-tidspunkt").innerHTML = "kl. " + post.acf.tidspunkt;
             dest.querySelector("img").src = post.acf.billede;
             dest.querySelector(".data_textarea").innerHTML = post.acf.tekst;
+            dest.querySelector(".data_pris").innerHTML = "Pris: " + post.acf.pris + "kr.";
         }
     })
 }

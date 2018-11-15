@@ -1,6 +1,17 @@
+:root {
+    --raleway: 'Raleway', sans-serif;
+}
+
 body {
     margin: 0;
     /*    background-color: #2a3a38;*/
+}
+
+p,
+h1,
+h2,
+h3 {
+    font-family: var(--raleway);
 }
 
 .generel_grid {
