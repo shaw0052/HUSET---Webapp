@@ -16,7 +16,7 @@ h3 {
 
 .generel_grid {
     display: grid;
-    grid-template-rows: 61.28px auto 70px;
+    grid-template-rows: auto auto 70px;
 }
 
 header {
@@ -24,10 +24,16 @@ header {
     top: 0;
     z-index: 1;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    height: 61.28px;
+
 }
 
 header img {
-    width: 40%;
+    max-width: 100%;
+    grid-column: 2;
+    align-self: center;
 }
 
 nav {
