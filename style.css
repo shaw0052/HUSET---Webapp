@@ -16,7 +16,7 @@ h3 {
 
 .generel_grid {
     display: grid;
-    grid-template-rows: auto auto 70px;
+    grid-template-rows: 61.28px auto 70px;
 }
 
 header {
