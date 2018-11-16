@@ -3,7 +3,7 @@
     "lang": "da",
     "name": "HUSET webapp",
     "scope": "/kea/gruppe4_huset/webapp/",
-    "display": "browser",
+    "display": "standalone",
     "start_url": "https://www.designhagenow.dk/kea/gruppe4_huset/webapp/",
     "short_name": "huset-webapp",
     "theme_color": "transparent",
