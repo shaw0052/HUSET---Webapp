@@ -25,42 +25,67 @@
     <div class="generel_grid">
         <header>
 
-        <!------------ billede i toppen ----------------->
+            <!------------ billede (logo) i toppen ----------------->
             <img src="assets/HUSETevent_logo.png" alt="HUSET logo">
 
         </header>
 
-        <!------------ menu knapper ----------------->
-
+        <!----- menu med knapper til filtrering af forskellige typer events ------->
         <nav>
+            <!----- knap med filtrering "alle events" ------->
             <button id="alle" class="event-item" data-kategori="alle">
                 <img class="homeImg" src="assets/h_pink.png" alt="H - Fra HUSET logo">
                 <img class="homeImg hide" src="assets/h_pink.png" alt="H - Fra HUSET logo">
             </button>
+
+            <!---------- knap med filtrering "film events" ------------>
             <button id="film" class="event-item" data-kategori="film">
                 <img class="filmImgWhite" src="assets/film_hvid.png" alt="film ikon">
                 <img class="filmImgPink hide" src="assets/film_pink.png" alt="film ikon">
             </button>
+
+            <!---------- knap med filtrering "musik events" ------------>
             <button id="musik" class="event-item" data-kategori="musik">
                 <img class="musikImg" src="assets/musik_hvid.png" alt="musik ikon">
                 <img class="musikImg hide" src="assets/musik_pink.png" alt="musik ikon">
             </button>
+
+            <!---------- knap med filtrering "film events" ------------>
             <button id="teater" class="event-item" data-kategori="teater">
                 <img class="teaterImg" src="assets/teater_hvid.png" alt="teater ikon">
                 <img class="teaterImg hide" src="assets/teater_pink.png" alt="teater ikon">
             </button>
+
+            <!------------ knap til kontakt side -------------->
             <button id="kontakt">
                 <img class="kontaktImg" src="assets/kontakt_hvid.png" alt="kontakt ikon">
             </button>
+
         </nav>
+
+
         <main>
             <section class="event_grid">
+
+                <!---------- data-content fungerer som en kasse/container hvor indholdet fra template bliver tilføjet vha. Javascript ------------>
                 <div class="data-content"></div>
+
+                <!---------- data-template er ------------>
                 <template id="data-template">
+
+                    <!---------- event-content fungerer som en kasse/container hvor indholdet til et event bliver samlet - billede, overskrift, og dato/tidspunkt ------------>
                     <div class="event_content">
+
+                        <!---------- billede af event ------------>
                         <img class="topImage" src="" alt="">
+
+                        <!---------- box er en kasse der indeholder overskrift og dato/tidspunkt ------------>
                         <div class="box">
+
+                            <!---------- overskrift på event ------------>
                             <h2></h2>
+
+                            <!---------- dato/tidpunkt på event ------------>
                             <p class="data-dato"></p>
                             <p class="data-tidspunkt"></p>
                         </div>
