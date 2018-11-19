@@ -1,4 +1,6 @@
+//Der angives en variabel som søger i URL'en
 let urlPrams = new URLSearchParams(window.location.search);
+//Her benyttes variablen urlPrams sammen med "get" og på den måde trækkes id'et ud af URL'en og gemmes i variablen "id"
 let id = urlPrams.get("id");
 console.log(id);
 

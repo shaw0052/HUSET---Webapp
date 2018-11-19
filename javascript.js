@@ -9,6 +9,8 @@ let destination = document.querySelector(".data-content");
 
 let post;
 
+
+//"all" variablen benyttes til at samle de forskellige arrays som hentes i funktionen "getJSON"
 let all = [];
 
 
@@ -44,7 +46,7 @@ async function getJSON() {
     myTeaterPosts = await myTeater.json();
 
 
-
+//Via en forEach løkke køres arrayet igennem og push benyttes til at tilføje elementerne fra det oprindelige array ind i det nye (all)
     myMusikPosts.forEach(post => {
         all.push(post);
     })
@@ -67,6 +69,8 @@ function showPosts() {
 
     console.log("showPosts kørt");
 
+    //post.id finder id på et element i arrayet og gør det lig i
+
     all.forEach((post, i) => {
         console.log(i);
         post.id = i;
@@ -76,6 +80,7 @@ function showPosts() {
             klon.querySelector("img").src = post.acf.billede;
             klon.querySelector(".event_content").addEventListener("click", () => {
                 window.location.href = "singelevent.html?id=" + i;
+                //i tilføjes en predefineret URL og på den måde tilføjes et elements id URL'en
             });
             klon.querySelector("h2").innerHTML = post.acf.titel;
             klon.querySelector(".data-dato").innerHTML = post.acf.dato;

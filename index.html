@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUSET webapp</title>
-    <!--    web app iOS meta tags  -->
+    <!--    web app iOS meta tags sikre at web appen føles mere native på iOS enheder -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="start_url" content="/kea/gruppe4_huset/webapp/">
     <meta name="apple-mobile-web-app-title" content="HUSET KBH">
@@ -14,7 +14,11 @@
 
     <!--   Slut  web app iOS meta tags Slut  -->
 
+    <!-- her er referencen til web appen service worker. Appens Service worker cacher appens besøgte sider og gør dem tilgængelige hvis brugers device skulle gå offline-->
     <script src="pwabuilder-sw-register.js"></script>
+
+    <!-- manifest benyttes til Android og indeholder data omkring app'en såsom skrivebords ikon m.m. derudover indeholder den information om hvordan app'en skal vises på enhederne (fullscreen, standalone eller browser) Vi benytter os af standalone som giver et udtryk der minder om native apps -->
+
     <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
