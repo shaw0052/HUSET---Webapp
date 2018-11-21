@@ -46,7 +46,7 @@ async function getJSON() {
     myTeaterPosts = await myTeater.json();
 
 
-//Via en forEach løkke køres arrayet igennem og push benyttes til at tilføje elementerne fra det oprindelige array ind i det nye (all)
+    //Via en forEach løkke køres arrayet igennem og push benyttes til at tilføje elementerne fra det oprindelige array ind i det nye (all)
     myMusikPosts.forEach(post => {
         all.push(post);
     })
@@ -88,4 +88,57 @@ function showPosts() {
             destination.appendChild(klon);
         }
     })
+
+
+    if (eventFilter == "alle") {
+        document.querySelector(".teaterImgPink").classList.add("hide");
+        document.querySelector(".musikImgPink").classList.add("hide");
+        document.querySelector(".filmImgPink").classList.add("hide");
+        document.querySelector(".homeImgPink").classList.remove("hide");
+
+        document.querySelector(".teaterImgWhite").classList.remove("hide");
+        document.querySelector(".musikImgWhite").classList.remove("hide");
+        document.querySelector(".filmImgWhite").classList.remove("hide");
+        document.querySelector(".homeImgWhite").classList.add("hide");
+
+
+    }
+
+    if (eventFilter == "film") {
+        document.querySelector(".homeImgPink").classList.add("hide");
+        document.querySelector(".teaterImgPink").classList.add("hide");
+        document.querySelector(".musikImgPink").classList.add("hide");
+        document.querySelector(".filmImgPink").classList.remove("hide");
+
+        document.querySelector(".homeImgWhite").classList.remove("hide");
+        document.querySelector(".teaterImgWhite").classList.remove("hide");
+        document.querySelector(".musikImgWhite").classList.remove("hide");
+        document.querySelector(".filmImgWhite").classList.add("hide");
+    }
+
+    if (eventFilter == "musik") {
+        document.querySelector(".homeImgPink").classList.add("hide");
+        document.querySelector(".teaterImgPink").classList.add("hide");
+        document.querySelector(".musikImgPink").classList.remove("hide");
+        document.querySelector(".filmImgPink").classList.add("hide");
+
+        document.querySelector(".homeImgWhite").classList.remove("hide");
+        document.querySelector(".teaterImgWhite").classList.remove("hide");
+        document.querySelector(".musikImgWhite").classList.add("hide");
+        document.querySelector(".filmImgWhite").classList.remove("hide");
+    }
+
+    if (eventFilter == "teater") {
+        document.querySelector(".homeImgPink").classList.add("hide");
+        document.querySelector(".teaterImgPink").classList.remove("hide");
+        document.querySelector(".musikImgPink").classList.add("hide");
+        document.querySelector(".filmImgPink").classList.add("hide");
+
+        document.querySelector(".homeImgWhite").classList.remove("hide");
+        document.querySelector(".teaterImgWhite").classList.add("hide");
+        document.querySelector(".musikImgWhite").classList.remove("hide");
+        document.querySelector(".filmImgWhite").classList.remove("hide");
+    }
+
+
 }
